@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20CAD8F6EA4DA2CF8A844EB7 /* Pods_JSONParseSwift5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907E5C2DF0DFEB525CEF5574 /* Pods_JSONParseSwift5.framework */; };
 		9D10AF7C2556C3A3006B8DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10AF7B2556C3A3006B8DA8 /* AppDelegate.swift */; };
 		9D10AF7E2556C3A3006B8DA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10AF7D2556C3A3006B8DA8 /* SceneDelegate.swift */; };
 		9D10AF802556C3A3006B8DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10AF7F2556C3A3006B8DA8 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EA0A5E5824D2B4CC26FC9E0 /* Pods-JSONParseSwift5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONParseSwift5.debug.xcconfig"; path = "Target Support Files/Pods-JSONParseSwift5/Pods-JSONParseSwift5.debug.xcconfig"; sourceTree = "<group>"; };
+		8E37DF3E2B2472DC5231C4AB /* Pods-JSONParseSwift5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONParseSwift5.release.xcconfig"; path = "Target Support Files/Pods-JSONParseSwift5/Pods-JSONParseSwift5.release.xcconfig"; sourceTree = "<group>"; };
+		907E5C2DF0DFEB525CEF5574 /* Pods_JSONParseSwift5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONParseSwift5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D10AF782556C3A3006B8DA8 /* JSONParseSwift5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONParseSwift5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D10AF7B2556C3A3006B8DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D10AF7D2556C3A3006B8DA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CAD8F6EA4DA2CF8A844EB7 /* Pods_JSONParseSwift5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B396029B7C7F9C82A4A23D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				907E5C2DF0DFEB525CEF5574 /* Pods_JSONParseSwift5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		353464DB3699A9853E82D301 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EA0A5E5824D2B4CC26FC9E0 /* Pods-JSONParseSwift5.debug.xcconfig */,
+				8E37DF3E2B2472DC5231C4AB /* Pods-JSONParseSwift5.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D10AF6F2556C3A3006B8DA8 = {
 			isa = PBXGroup;
 			children = (
 				9D10AF7A2556C3A3006B8DA8 /* JSONParseSwift5 */,
 				9D10AF792556C3A3006B8DA8 /* Products */,
+				353464DB3699A9853E82D301 /* Pods */,
+				2B396029B7C7F9C82A4A23D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,47 @@
 		9D10AF7A2556C3A3006B8DA8 /* JSONParseSwift5 */ = {
 			isa = PBXGroup;
 			children = (
+				9D10AF912556CF15006B8DA8 /* Application */,
+				9D10AF902556CF0C006B8DA8 /* Model */,
+				9D10AF8F2556CF00006B8DA8 /* Controllers */,
+				9D10AF922556CF23006B8DA8 /* Resources */,
+			);
+			path = JSONParseSwift5;
+			sourceTree = "<group>";
+		};
+		9D10AF8F2556CF00006B8DA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D10AF7F2556C3A3006B8DA8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D10AF902556CF0C006B8DA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D10AF912556CF15006B8DA8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				9D10AF7B2556C3A3006B8DA8 /* AppDelegate.swift */,
 				9D10AF7D2556C3A3006B8DA8 /* SceneDelegate.swift */,
-				9D10AF7F2556C3A3006B8DA8 /* ViewController.swift */,
+				9D10AF892556C3A7006B8DA8 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9D10AF922556CF23006B8DA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9D10AF812556C3A3006B8DA8 /* Main.storyboard */,
 				9D10AF842556C3A7006B8DA8 /* Assets.xcassets */,
 				9D10AF862556C3A7006B8DA8 /* LaunchScreen.storyboard */,
-				9D10AF892556C3A7006B8DA8 /* Info.plist */,
 			);
-			path = JSONParseSwift5;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +131,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D10AF8C2556C3A7006B8DA8 /* Build configuration list for PBXNativeTarget "JSONParseSwift5" */;
 			buildPhases = (
+				D7E6EA179BE768482A17B4D2 /* [CP] Check Pods Manifest.lock */,
 				9D10AF742556C3A3006B8DA8 /* Sources */,
 				9D10AF752556C3A3006B8DA8 /* Frameworks */,
 				9D10AF762556C3A3006B8DA8 /* Resources */,
@@ -132,6 +190,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7E6EA179BE768482A17B4D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSONParseSwift5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D10AF742556C3A3006B8DA8 /* Sources */ = {
@@ -282,10 +365,11 @@
 		};
 		9D10AF8D2556C3A7006B8DA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA0A5E5824D2B4CC26FC9E0 /* Pods-JSONParseSwift5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JSONParseSwift5/Info.plist;
+				INFOPLIST_FILE = JSONParseSwift5/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +383,11 @@
 		};
 		9D10AF8E2556C3A7006B8DA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E37DF3E2B2472DC5231C4AB /* Pods-JSONParseSwift5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JSONParseSwift5/Info.plist;
+				INFOPLIST_FILE = JSONParseSwift5/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

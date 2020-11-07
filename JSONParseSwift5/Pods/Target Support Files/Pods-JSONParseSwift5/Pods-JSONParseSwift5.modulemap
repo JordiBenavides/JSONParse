@@ -1,0 +1,6 @@
+framework module Pods_JSONParseSwift5 {
+  umbrella header "Pods-JSONParseSwift5-umbrella.h"
+
+  export *
+  module * { export * }
+}
