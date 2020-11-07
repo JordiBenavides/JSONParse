@@ -56,15 +56,47 @@
 		9D10AF7A2556C3A3006B8DA8 /* JSONParseSwift5 */ = {
 			isa = PBXGroup;
 			children = (
+				9D10AF912556CF15006B8DA8 /* Application */,
+				9D10AF902556CF0C006B8DA8 /* Model */,
+				9D10AF8F2556CF00006B8DA8 /* Controllers */,
+				9D10AF922556CF23006B8DA8 /* Resources */,
+			);
+			path = JSONParseSwift5;
+			sourceTree = "<group>";
+		};
+		9D10AF8F2556CF00006B8DA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D10AF7F2556C3A3006B8DA8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D10AF902556CF0C006B8DA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D10AF912556CF15006B8DA8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				9D10AF7B2556C3A3006B8DA8 /* AppDelegate.swift */,
 				9D10AF7D2556C3A3006B8DA8 /* SceneDelegate.swift */,
-				9D10AF7F2556C3A3006B8DA8 /* ViewController.swift */,
+				9D10AF892556C3A7006B8DA8 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9D10AF922556CF23006B8DA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9D10AF812556C3A3006B8DA8 /* Main.storyboard */,
 				9D10AF842556C3A7006B8DA8 /* Assets.xcassets */,
 				9D10AF862556C3A7006B8DA8 /* LaunchScreen.storyboard */,
-				9D10AF892556C3A7006B8DA8 /* Info.plist */,
 			);
-			path = JSONParseSwift5;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JSONParseSwift5/Info.plist;
+				INFOPLIST_FILE = JSONParseSwift5/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JSONParseSwift5/Info.plist;
+				INFOPLIST_FILE = JSONParseSwift5/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
