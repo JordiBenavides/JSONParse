@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableViewCell: UITableViewCell?
     @IBOutlet weak var tableView: UITableView!
     
+    private let kivaLoanURL = "https://api.kivaws.org/v1/loans/newest.json"
+    private var loans = [Loan]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
