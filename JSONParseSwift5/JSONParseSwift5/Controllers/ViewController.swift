@@ -30,12 +30,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
-        return 1
+        return loans.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as? CustomTableViewCell
+        cell?.nameLabel.text = loans[indexPath.row].name
+        cell?.countryLabel.text = loans[indexPath.row].country
+        cell?.useLabel.text = loans[indexPath.row].use
+        cell?.amountLabel.text = "$\(loans[indexPath.row].amount)"
+        
         return cell ??  UITableViewCell()
     }
 
